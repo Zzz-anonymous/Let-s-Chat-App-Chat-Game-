@@ -1,0 +1,32 @@
+{
+    "stickers": [
+      {
+        "name": "1",
+        "url": "stickers/sticker_1.png"
+      },
+      {
+        "name": "2",
+        "url": "stickers/sticker_2.png"
+      },{
+        "name": "3",
+        "url": "stickers/sticker_3.png"
+      },{
+        "name": "4",
+        "url": "stickers/sticker_4.png"
+      },{
+        "name": "5",
+        "url": "stickers/sticker_5.png"
+      },{
+        "name": "6",
+        "url": "stickers/sticker_6.png"
+      },{
+        "name": "7",
+        "url": "stickers/sticker_7.png"
+      },{
+        "name": "8",
+        "url": "stickers/sticker_8.png"
+      }
+      
+    ]
+  }
+  

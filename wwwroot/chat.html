@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+    <title>Let's Chat</title>
+    <link href="image/favicon.png" rel="shortcut icon">
+    <link href="css/app.css" rel="stylesheet">
+    <style>
+        main {
+            display: flex;
+            background: url("image/91657.jpg");
+            background-size: contain;
+        }
+
+        .game {
+            flex: 1;
+            border: 1px solid rgba(243, 35, 153, 0.5);
+        }
+
+        h3 {
+            color: #ccc;
+            text-shadow: 3px -1px 11px rgba(238, 32, 157, 0.68);
+        }
+
+        .chat {
+            flex: 1;
+            overflow-y: scroll;
+            /* display: flex; */
+            flex-direction: column-reverse;
+        }
+
+        .active {
+            outline: 5px dashed red;
+            outline-offset: -5px;
+        }
+
+        #message {
+            width: 100%;
+            resize: none;
+            overflow-y: auto;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+
+        .image {
+            max-width: 200px;
+            max-height: 200px;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+
+        .image:fullscreen {
+            object-fit: scale-down !important;
+            border: none !important;
+            background: #000 !important;
+        }
+
+        .sticker {
+            width: 100px;
+            height: 100px;
+        }
+
+        #dialog {
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        #dialog::backdrop,
+        #stickers::backdrop {
+            background: #0009;
+        }
+
+        #dialog form,
+        #stickers form {
+            margin-bottom: 5px;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        #container .image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        #btn {
+            /* anchor-name: --btn; */
+            position: relative;
+        }
+    </style>
+</head>
+
+<body class="chat">
+    <header>
+        <h1>Let's Chat</h1>
+        <!-- popovertarget="pop" -->
+        <button>👧🏻 = <b id="count">0</b></button>
+        <!-- <div id="pop" popover></div> -->
+        <a href="menu.html" class="menu">
+            <img src="image/hamburgerMenu.png" alt="" width="32">
+        </a>
+    </header>
+
+    <main>
+        <div class="game">
+            <div id="profile-container" style="padding: 10px;">
+                <!-- Profile picture and name will be displayed here -->
+                <img id="profile-picture" src="" alt="Profile Picture" width="50" height="50"
+                    style="border-radius: 50%;">
+                <h3>Hello, <span id="profile-name"></span></h3>
+
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Game</th>
+                        <th>Player</th>
+                        <th>Join</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tic Tae Toe</td>
+                        <td colspan="">No Player</td>
+                        <td>
+                            <button id="createButton" data-create="TicTacToe">Create</button>
+                            <!-- <button id="joinButton">Join</button> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Race Game</td>
+                        <td colspan="">No Player</td>
+                        <td>
+                            <button id="createButton" data-create="RaceGame">Create</button>
+                            <!-- <button id="joinButton">Join</button> -->
+                        </td>
+                    </tr>
+                    <!-- <tr><td colspan="2">No game</td></tr> -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="chat" id="chatContainer">
+            <div style="flex: 1"></div>
+            <ul id="chat"></ul>
+            <div class="chatFooter">
+                <form autocomplete="off" id="messageForm">
+                    <audio id="audioMessageSent" src="sound/message_send.mp3" preload="auto"></audio>
+                    <audio id="audioMessageReceived" src="sound/message_received.mp3" preload="auto"></audio>
+
+                    <textarea id="message" placeholder="Enter Message" rows="1"></textarea>
+                    <button type="button" id="image">Image</button>
+                    <button type="button" id="gallery">Gallery</button>
+                    <button type="button" id="file">File</button>
+                    <button type="button" id="stickerButton">Sticker</button>
+                    <input type="file" id="file1" accept="image/*" hidden multiple>
+                    <input type="file" id="file2" hidden multiple>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="dialog">
+        <form method="dialog"><button>X</button></form>
+        <div id="container"></div>
+    </dialog>
+
+    <dialog id="stickers">
+        <form method="dialog"><button>X</button></form>
+        <div id="stickerPanel"></div>
+    </dialog>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Checking =============================
+        const name = sessionStorage.getItem('name') || 'Guest';
+        const profilePicture = sessionStorage.getItem('profilePicture') || 'image/profilePicture.png';
+
+
+        if (!name || !profilePicture) {
+            location = '/';
+            throw 'ERROR: Invalid profile picture or name';
+        }
+
+        // General Functions ====================
+
+        function getImageURL(message) {
+            const re = /\.(jpg|jpeg|png|webp|bmp|gif)$/i;
+            try {
+                const url = new URL(message);
+                if (re.test(url.pathname)) {
+                    return url.href;
+                }
+            }
+            catch {
+                // Do nothing
+            }
+            return null;
+        }
+
+        function getYouTubeId(message) {
+            try {
+                const url = new URL(message);
+                if (url.hostname == 'www.youtube.com' &&
+                    url.pathname == '/watch') {
+                    return url.searchParams.get('v');
+                }
+            }
+            catch {
+                // Do nothing
+            }
+            return null;
+        }
+
+        function sendImages(files) {
+            // Retrieve existing images from sessionStorage or initialize an empty array
+            let images = JSON.parse(sessionStorage.getItem('images')) || [];
+            for (const f of files) {
+                if (f && f.type.startsWith('image/')) {
+                    fit(f, 500, 500, 'dataURL', 'image/webp')
+                        .then(url => {
+                            // Store the image data in sessionStorage
+                            const imageData = url.split(',')[1]; images.push(imageData);
+                            sessionStorage.setItem('images', JSON.stringify(images));
+
+                            // Invoke the SignalR hub method to send the image
+                            con.invoke('SendImage', name, url, profilePicture);
+
+                        })
+                }
+            }
+        }
+
+        function sendFiles(files) {
+            for (const f of files) {
+                if (f) {
+                    const fr = new FileReader();
+                    fr.onload = e => {
+                        const url = e.target.result;
+                        con.invoke('SendFile', name, url, f.name, profilePicture);
+                    };
+                    fr.readAsDataURL(f);
+                }
+            }
+        }
+
+        function storeLink(link) {
+            // Retrieve existing links from sessionStorage or initialize an empty array
+            let links = JSON.parse(sessionStorage.getItem('links')) || [];
+            links.push(link);
+            sessionStorage.setItem('links', JSON.stringify(links));
+        }
+
+        // Fetch rude words from txt file
+        let rudeWords = [];
+        fetch('rudeWords.txt')
+            .then(response => response.text())
+            .then(text => {
+                rudeWords = text.split('\n').map(word => word.trim()).filter(word => word);
+            })
+            .catch(error => console.error('Error loading rude words:', error));
+
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Escape special characters for regex
+        }
+
+        function filterRudeWords(message) {
+            for (const word of rudeWords) {
+                const regex = new RegExp(escapeRegExp(word), 'gi');
+                message = message.replace(regex, '***');
+            }
+            return message;
+        }
+
+
+        // get Timespan + format timespan
+        function formatTime(date) {
+            let hours = date.getHours();
+            const minutes = date.getMinutes();
+            const hoursStr = hours < 10 ? '0' + hours : hours;
+            const minutesStr = minutes < 10 ? '0' + minutes : minutes;
+            const strTime = hoursStr + ':' + minutesStr;
+            return strTime;
+        }
+
+
+        // Connection Setup =====================
+        const param = $.param({ name });
+
+        // const params = new URLSearchParams({ name, profilePicture });
+
+        const con = new signalR.HubConnectionBuilder()
+            .withUrl('/hub?' + param)
+            .build();
+
+        con.onclose(err => {
+            sessionStorage.clear();
+            location = '/';
+        });
+
+        con.on('ReceiveText', (name, message, profilePicture, who) => {
+            console.log("ReceiveText event triggered with message:", message);
+            // Filter rude words
+            message = filterRudeWords(message);
+
+            // Text to emoji
+            message = message
+                .replaceAll(':)', '😊')
+                .replaceAll(':(', '😒')
+                .replaceAll('<3', '❤️');
+
+            // HTML escape
+            message = $('<div>').text(message).html();
+
+            // Text to hyperlink
+            message = message.replace(
+                /(https?:\/\/\S+)/gi,
+                '<a href="$&" target="_blank">$&</a>'
+            );
+
+            // Email to mailto hyperlink
+            message = message.replace(
+                /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi,
+                '<a href="mailto:$1">$1</a>'
+            );
+
+            // Apply formatting (bold, italic, underline) - ensure it comes after escaping HTML
+            message = message
+                .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')  // Bold
+                .replace(/\*(.*?)\*/g, '<i>$1</i>')      // Italic
+                .replace(/_(.*?)_/g, '<u>$1</u>');        // Underline
+
+            // constant
+            const profilePictureIcon = who === 'others' ? `<img src="${profilePicture}" alt="Profile Picture" style="width:50px; height:50px; border-radius:50%; margin-right:10px;">` : '';
+            const timespan = formatTime(new Date());
+
+            $('#chat').append(`
+                <li class="${who}">
+                    ${profilePictureIcon}
+                    <div style="max-width:50%">
+                        <b>${name}:</b></br>
+                        ${message}</br>
+                        <div style="float:right;font-size:10px;background:rgba(240,240,240,0.4);">${timespan}</div>
+                    </div>
+                </li>
+            `);
+
+            if (who === 'others') {
+                document.getElementById('audioMessageReceived').play();
+            }
+        });
+
+        con.on('ReceiveImage', (name, url, profilePicture, who) => {
+            const profilePictureIcon = who === 'others' ? `<img src="${profilePicture}" alt="Profile Picture" style="width:50px; height:50px; border-radius:50%; margin-right:10px;">` : '';
+            const timespan = formatTime(new Date());  
+
+            $('#chat').append(`
+                <li class="${who}">
+                    ${profilePictureIcon}
+                    <div>
+                        <b>${name}</b><br>
+                        <img src="${url}" class="image"><br>
+                        <div style="float:right;font-size:10px;background:rgba(240,240,240,0.4);">${timespan}</div>
+                    </div>
+                </li>
+            `);
+            if (who === 'others') {
+                document.getElementById('audioMessageReceived').play();
+            }
+        });
+
+        con.on('ReceiveSticker', (name, url, profilePicture, who) => {
+            const profilePictureIcon = who === 'others' ? `<img src="${profilePicture}" alt="Profile Picture" style="width:50px; height:50px; border-radius:50%; margin-right:10px;">` : '';
+            const timespan = formatTime(new Date());
+
+            $('#chat').append(`
+                <li class="${who}">
+                    ${profilePictureIcon}
+                    <div>
+                        <b>${name}</b><br>
+                        <img src="${url}" class="sticker"><br>
+                        <div style="float:right;font-size:10px;background:rgba(240,240,240,0.4);">${timespan}</div>
+                    </div>
+                </li>
+            `);
+            if (who === 'others') {
+                document.getElementById('audioMessageReceived').play();
+            }
+        });
+
+
+        con.on('ReceiveYouTube', (name, id, profilePicture, who) => {
+            const profilePictureIcon = who === 'others' ? `<img src="${profilePicture}" alt="Profile Picture" style="width:50px; height:50px; border-radius:50%; margin-right:10px;">` : '';
+            const timespan = formatTime(new Date());  
+
+
+            $('#chat').append(`
+                <li class="${who}">
+                    ${profilePictureIcon}
+                    <div>
+                        <b>${name}</b><br>
+                        <iframe width="400" height="300" 
+                                src="https://www.youtube.com/embed/${id}"
+                                frameborder="0"
+                                allowfullscreen></iframe><br>
+                        <div style="float:right;font-size:10px;background:rgba(240,240,240,0.4);">${timespan}</div>
+                    </div>
+                </li>
+            `);
+            if (who === 'others') {
+                document.getElementById('audioMessageReceived').play();
+            }
+        });
+
+        con.on('ReceiveFile', (name, url, filename, profilePicture, who) => {
+            const profilePictureIcon = who === 'others' ? `<img src="${profilePicture}" alt="Profile Picture" style="width:50px; height:50px; border-radius:50%; margin-right:10px;">` : '';
+            const timespan = formatTime(new Date());  
+            
+            $('#chat').append(`
+                <li class="${who}">
+                    ${profilePictureIcon}
+                    <div>
+                        <b>${name}</b><br>
+                        <a href="${url}" download="${filename}">${filename}</a><br>
+                        <div style="float:right;font-size:10px;background:rgba(240,240,240,0.4);">${timespan}</div>
+                    </div>
+                </li>
+            `);
+            if (who === 'others') {
+                document.getElementById('audioMessageReceived').play();
+            }
+        });
+
+
+        con.on('UpdateStatus', (count, message, users) => {
+
+            $('#count').text(count);
+
+            // Display the status message
+            $('#chat').append(`
+                <li class="status">
+                    <div>
+                        ${message}
+                    </div>
+                </li>
+            `);
+
+            // Update the user list
+            const userListElement = document.getElementById('user-list');
+            userListElement.innerHTML = ''; // Clear the existing list
+            users.forEach(user => {
+                const li = document.createElement('li');
+                li.innerHTML = `<img src="${user.profilePicture}" alt="${user.name}" /> ${user.name}`;
+                userListElement.appendChild(li);
+            });
+        });
+
+        // Create a new game and store the game ID
+        $(document).on('click', '[data-create]', async e => {
+            const gameType = e.target.dataset.create;
+
+            try {
+                const gameId = await con.invoke('Create', gameType); // Only invoke Create when creating a new game
+                console.log(`Created ${gameType} game with ID: ${gameId}`);
+
+                // Redirect to the appropriate game page with the game ID
+                if (gameType === "TicTacToe") {
+                    location.href = `ticTaeToe.html?gameId=${gameId}&gameType=${gameType}`;
+                } else if (gameType === "RaceGame") {
+                    location.href = `raceGame.html?gameId=${gameId}&gameType=${gameType}`;
+                }
+            } catch (error) {
+                console.error('Error creating game:', error);
+            }
+        });
+
+        con.on("UpdateGameStatus", games => {
+            console.log("Received updated game list:", games); // Log received games
+            let h = '';
+
+            for (const game of games) {
+                // Ensure game properties are correctly accessed
+                const playerA = game.playerA || {};
+                h += `
+            <tr>
+                <td>${game.type}</td>
+                <td>
+                    <img src="${playerA.profilePicture || ''}" width="50" height="50"/> 
+                    <br/>
+                    ${playerA.name || 'Waiting for another player'}
+                </td>
+                <td>
+                    <button data-join="${game.id}" data-type="${game.type}">Join</button>
+                </td>
+            </tr>
+        `;
+            }
+
+            // If no games are available, show a message
+            if (games.length === 0) {
+                h = '<tr><td colspan="3">No game</td></tr>'; // Ensure colspan matches the number of columns
+            }
+
+            $('tbody').html(h); // Update the table body with the generated HTML
+        });
+
+
+        // Join an existing game
+        $(document).on('click', '[data-join]', e => {
+            const gameId = e.target.dataset.join; // Get the existing game ID
+            const gameType = e.target.dataset.type;
+            console.log(`Joining game: ${gameId}, Type: ${gameType}`);
+
+            // Redirect to the existing game page with the game ID
+            if (gameType === 'TicTacToe') {
+                location.href = `ticTaeToe.html?gameId=${gameId}&gameType=${gameType}`;
+            } else if (gameType === 'RaceGame') {
+                location.href = `raceGame.html?gameId=${gameId}&gameType=${gameType}`;
+            }
+        });
+
+
+        con.on("GameFull", function () {
+            alert("The game is full. Please wait for another game.");
+        });
+
+        
+
+
+        // Start ================================
+        con.start().then(main);
+
+        function main() {
+            $('#profile-name').text(name);
+            $('#profile-picture').attr('src', profilePicture || 'image/profilePicture.png');
+
+            // enable create game list
+            //  $('#createButton').prop('disabled', false);
+
+            // Form
+            $('.chatFooter form').submit(e => {
+                e.preventDefault();
+                let message = $('#message').val().trim();
+                if (message) {
+                    // Filter rude words before sending
+                    message = filterRudeWords(message);
+
+                    const url = getImageURL(message);
+                    const id = getYouTubeId(message);
+
+                    if (url) {
+                        con.invoke('SendImage', name, url, profilePicture);
+                    }
+                    else if (id) {
+                        const youtubeLink = `https://www.youtube.com/watch?v=${id}`;
+                        // Store the YouTube link in sessionStorage
+                        storeLink(youtubeLink);
+                        con.invoke('SendYouTube', name, id, profilePicture);
+                    }
+                    else {
+                        // Check if the message contains a non-image link
+                        const linkRegex = /(https?:\/\/[^\s]+)/g;
+                        const linkMatch = message.match(linkRegex);
+
+                        if (linkMatch) {
+                            // Store the non-image link in sessionStorage
+                            storeLink(linkMatch[0]);
+                        }
+
+
+                        con.invoke('SendText', name, message, profilePicture);
+
+                    }
+                    document.getElementById('audioMessageSent').play();
+                }
+                $('#message').val('').focus();
+            });
+
+            document.getElementById('message').addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault(); // Prevent creating a new line
+                $('#messageForm').submit(); // Trigger form submission
+            }
+        });
+            // Sticker Selection
+            document.getElementById('stickerButton').addEventListener('click', function () {
+                const dialog = document.getElementById('stickers');
+                dialog.showModal(); // Open the dialog
+
+                // Load stickers when the dialog is opened
+                fetch('stickers.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const stickerPanel = document.getElementById('stickerPanel');
+                        stickerPanel.innerHTML = ''; // Clear existing stickers
+                        data.stickers.forEach(sticker => {
+                            const img = document.createElement('img');
+                            img.src = sticker.url;
+                            img.alt = sticker.name;
+                            img.classList.add('sticker'); // Add a class for styling
+                            // Add event listener to send the sticker when clicked
+                            img.addEventListener('click', () => {
+                                console.log('Sticker clicked:', sticker.url); // Log when the sticker is clicked
+                                sendSticker(sticker.url);
+                                document.getElementById('audioMessageSent').play();
+                            });
+
+                            stickerPanel.appendChild(img);
+                        });
+                    })
+                    .catch(error => console.error('Error loading stickers:', error));
+            });
+
+            // Function to send the sticker through SignalR
+            function sendSticker(stickerUrl) {
+                console.log('Sending sticker:', stickerUrl); // Log when the sticker is being sent
+                con.invoke("SendSticker", name, stickerUrl, profilePicture)
+                    .catch(function (err) {
+                        console.error('Error sending sticker:', err.toString());
+                    });
+            }
+
+
+            // Fullscreen
+            $(document).on('click', '.image', e => {
+                document.fullscreenElement ?
+                    document.exitFullscreen() :
+                    e.target.requestFullscreen();
+            });
+
+            // Image file picker
+            $('#image').click(e => $('#file1').click());
+
+            $('#file1').change(e => {
+                const files = e.target.files;
+                sendImages(files);
+                e.target.value = null;
+            });
+
+            // File file picker
+            $('#file').click(e => $('#file2').click());
+
+            $('#file2').change(e => {
+                const files = e.target.files;
+                sendFiles(files);
+                e.target.value = null;
+            });
+
+            // Drag and drop
+            $('#chatContainer').on('dragenter dragover', e => {
+                e.preventDefault();
+                $('#chatContainer').addClass('active');
+            });
+
+            $('#chatContainer').on('dragleave drop', e => {
+                e.preventDefault();
+                $('#chatContainer').removeClass('active');
+            });
+
+            $('#chatContainer').on('drop', e => {
+                e.preventDefault();
+                const files = e.originalEvent.dataTransfer.files;
+
+                for (const f of files) {
+                    if (f.type.startsWith('image/')) {
+                        sendImages([f]);
+                    }
+                    else {
+                        sendFiles([f]);
+                    }
+                }
+            });
+
+            // Dialog
+            $('#gallery').click(e => {
+                const $images = $('.image').clone();
+                $('#container').html($images.length ? $images : 'No image');
+                $('#dialog')[0].showModal();
+            });
+
+            $('#dialog').on('close', e => {
+                $('#container').empty();
+            });
+        }
+    </script>
+</body>
+
+</html>

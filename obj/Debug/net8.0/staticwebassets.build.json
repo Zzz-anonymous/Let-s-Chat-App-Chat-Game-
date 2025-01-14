@@ -1,0 +1,4039 @@
+{
+  "Version": 1,
+  "Hash": "BnP4rlHQL5/B4WqxDPrQLEvukVFIkRPFp4PjNS0jHDA=",
+  "Source": "ChatRT",
+  "BasePath": "_content/ChatRT",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ChatRT\\wwwroot",
+      "Source": "ChatRT",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\appsettings.Development.json",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "appsettings.Development#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tswichycbp",
+      "Integrity": "c/lfngzrIF/BxNxQwHaX/Pop1wh4aMKu8dUEyzjHcew=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\appsettings.Development.json"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\appsettings.json",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "appsettings#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gcazcydns5",
+      "Integrity": "IAMytDR1egBUo9NWyRzeAfLEhxK+iqK8sPPpc2GfBuM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\appsettings.json"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\chat.html",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "chat#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2i8xu59aos",
+      "Integrity": "tjQkEERKOPvXI9Qxis/gaHk9KczbeXrMJuETO/v/hYY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chat.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\ChatHub.cs",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "ChatHub#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "50ikva9gri",
+      "Integrity": "JQ+S3OJlEYdoAT5UvozOqRV91OMHvZgqbpLeG2GOEJk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ChatHub.cs"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\css\\app.css",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2vg0kvewjv",
+      "Integrity": "XqW0prkqvvAV5omoBqR6PunPzjF+Ah7yYEj1lFWB4HQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image.html",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "image#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ng415l55r",
+      "Integrity": "QJJmFVvUiXBPw/Z2SJ2dX/PaHh7Pcs6etW82XpLCL9w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\6898823.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "image/6898823#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lby0ojwhdg",
+      "Integrity": "P84MC+nCkAakYEkSGaZGwQfHZ54nowDTZkzaCirX5Nk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\6898823.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\91656.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "image/91656#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1mu5qr823d",
+      "Integrity": "OdA5du//XiFHBJNWP+rJCdV7wWzRIx5RBl6C9x+JU9Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\91656.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\91657.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "image/91657#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4xbqdoa6ad",
+      "Integrity": "2GsJmH9Gnr4ECGDMuZXBUHGPQf/59BKqqexXsPgLSMA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\91657.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\favicon.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "image/favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "je7k4sgs5c",
+      "Integrity": "hSmsuNzFvoPx6eQy+HhdR89fEIpUzvi/PIdd7Fhhfdo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\hamburgerMenu.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "image/hamburgerMenu#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pi1grljdy1",
+      "Integrity": "sUp8N77It6xxY/VsHMpwQmSLirzEcBz4OdUNFTFK8GU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\hamburgerMenu.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\profilePicture.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "image/profilePicture#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cyhgjdknut",
+      "Integrity": "HPqrjTiNOAvXDhwbSr9vPG8kSAeKbYB79qSq4eSej7g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\profilePicture.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\index.html",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ob4z6p9xh3",
+      "Integrity": "XGW4YQECXXugjog2qBA00npHQZjR8EiwkNrcrCe7VtQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\js\\app.js",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "js/app#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6xvauynjs1",
+      "Integrity": "5mkEt9HMSVOGfhEcFjrAze0V891+FNAEfEGnvzDYnqA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\links.html",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "links#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8c1y5rd6rp",
+      "Integrity": "SPxPRDhfioxulxzfD0Tr5u5U2Vdiuc27ObpTUIPB6Og=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\links.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\menu.html",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "menu#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pv8xv86827",
+      "Integrity": "y1Xe5f1SKorwQ0ACBVFOiiMMQkvthnx0n5Fze79fRrE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\menu.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\Note-2.txt",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "Note-2#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8ltpyecuwx",
+      "Integrity": "9AMNXHnKn73C4UeWd3JWG3SgeBX8ogwVTk/+dZA/PnU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Note-2.txt"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\Note-3.txt",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "Note-3#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f3bfpvbgby",
+      "Integrity": "6yriG522Gk0GW/4VKUY7Mk/SANwYGuaulxdMk+4xEqY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Note-3.txt"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\Program.cs",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "Program#[.{fingerprint}]?.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "38x275ce02",
+      "Integrity": "s+9Okskb6JR84dGA6XzkVooGxAvKSYLLRqQgKOot8kE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Program.cs"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\raceGame.html",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "raceGame#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "veql1a229h",
+      "Integrity": "Cd40La0ad+a0+vaOd8Yjw/iqnyqksbnnuOfqKdYwigo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\raceGame.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\rudeWords.txt",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "rudeWords#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w7ug47vg02",
+      "Integrity": "BBOUjwsATwPMCm6qAV8yu+0q07RQXX0SxLfqJhMDKts=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rudeWords.txt"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\bombSoundEffect.MP3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "sound/bombSoundEffect#[.{fingerprint}]?.MP3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7mf4wngoy7",
+      "Integrity": "8fse+5bAE9aJhMabD8FYiJftIcs+PCjm1K5R3Hm1nak=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sound\\bombSoundEffect.MP3"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\bubble-laser.wav",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "sound/bubble-laser#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dxnuhuceb2",
+      "Integrity": "XwLos3uK6knxY7Z8ySC7sYOjUYHuEe6XnIPnj7vVKoc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sound\\bubble-laser.wav"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\clickSound.wav",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "sound/clickSound#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8thmfr80hp",
+      "Integrity": "VMGSsppKzY3bzWiqnDQYSIXNxSzsARx8IZR7J40SpMQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sound\\clickSound.wav"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\game.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "sound/game#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a1snpcwa4y",
+      "Integrity": "rtZ9gUs6Xm1btC5q+s8M4xRx6MQKNok2GdlXKzC2Tjw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sound\\game.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\message_received.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "sound/message_received#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7jsr8f38ol",
+      "Integrity": "M53by/rewrt+KxsbvOAHeuQvYsP9Pw6JyOn+VPT1mzg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sound\\message_received.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\message_send.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "sound/message_send#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "khnbhwq3o3",
+      "Integrity": "qNwmqVE4schmCw/z46n0ulQj+KC1w5dx10zezKO9V+c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sound\\message_send.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\raceGameBg.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "sound/raceGameBg#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z5rpzelw6i",
+      "Integrity": "x6BKYkv+NPtjw95I8CySwLXDEq7GLzjVuulSetrpAzI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sound\\raceGameBg.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\raceSoundEffect.MP3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "sound/raceSoundEffect#[.{fingerprint}]?.MP3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pq2b4uosbb",
+      "Integrity": "oR6NR+hPWM8PxYecrutP7q+yZ4N8SPkIKNzYOJa+VXs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sound\\raceSoundEffect.MP3"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers.json",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "stickers#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ibtaltb6jc",
+      "Integrity": "7qskIenSeYpivahKob5wPObQHe631K5GsYUrPhqLxdA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\stickers.json"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_1.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "stickers/sticker_1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g6qbjaxrxg",
+      "Integrity": "SIRsT5AdTgxSA3bE8yZehlDiCOoDyqEzas8jwCKpZNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\stickers\\sticker_1.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_2.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "stickers/sticker_2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0os6i8appb",
+      "Integrity": "YNfIJWmY4euMm61JPuBnOc0S1GhVOwxA0SoUQywotsY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\stickers\\sticker_2.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_3.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "stickers/sticker_3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "scikx20png",
+      "Integrity": "FB1TD30zGr+NGEStPTYb3JL+O5twCPy25MId8OReBQ0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\stickers\\sticker_3.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_4.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "stickers/sticker_4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iujwao5njc",
+      "Integrity": "hhnDGF6+eNq9La9sSB39AnlhneCLkrlns6kNIgdjuEY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\stickers\\sticker_4.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_5.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "stickers/sticker_5#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ldkvaicb0x",
+      "Integrity": "FzWUj9+q/Ef0Jue2M32Sfh9zC+7wVdYxHOFHcknRorQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\stickers\\sticker_5.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_6.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "stickers/sticker_6#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hnos1fgf1d",
+      "Integrity": "M5dmdi+ZfZOeewNNEmCsNO7ChSNjfisWqT4cBDychnc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\stickers\\sticker_6.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_7.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "stickers/sticker_7#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mr77j71x2s",
+      "Integrity": "7h1yOJ9fakXf4SL5qmC6OSsw/Id+SSuAk5+ZkGi+8uA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\stickers\\sticker_7.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_8.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "stickers/sticker_8#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lvha16kz5p",
+      "Integrity": "/w12axOuNh/NchOQWqf9bVPBPXi2SwHTSX8YkO7gf+E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\stickers\\sticker_8.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\ticTaeToe.html",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "ticTaeToe#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "miln2t40bx",
+      "Integrity": "Uh1cPN3P0WzGKrfztyZHHCcLxYa1Y1+I1emI5D2YrA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ticTaeToe.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "appsettings.Development.json",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\appsettings.Development.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c/lfngzrIF/BxNxQwHaX/Pop1wh4aMKu8dUEyzjHcew=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Feb 2024 02:35:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c/lfngzrIF/BxNxQwHaX/Pop1wh4aMKu8dUEyzjHcew="
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.Development.tswichycbp.json",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\appsettings.Development.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c/lfngzrIF/BxNxQwHaX/Pop1wh4aMKu8dUEyzjHcew=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Feb 2024 02:35:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tswichycbp"
+        },
+        {
+          "Name": "label",
+          "Value": "appsettings.Development.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c/lfngzrIF/BxNxQwHaX/Pop1wh4aMKu8dUEyzjHcew="
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.gcazcydns5.json",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\appsettings.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "151"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IAMytDR1egBUo9NWyRzeAfLEhxK+iqK8sPPpc2GfBuM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Feb 2024 02:35:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gcazcydns5"
+        },
+        {
+          "Name": "label",
+          "Value": "appsettings.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IAMytDR1egBUo9NWyRzeAfLEhxK+iqK8sPPpc2GfBuM="
+        }
+      ]
+    },
+    {
+      "Route": "appsettings.json",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\appsettings.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "151"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IAMytDR1egBUo9NWyRzeAfLEhxK+iqK8sPPpc2GfBuM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Feb 2024 02:35:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IAMytDR1egBUo9NWyRzeAfLEhxK+iqK8sPPpc2GfBuM="
+        }
+      ]
+    },
+    {
+      "Route": "chat.2i8xu59aos.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\chat.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tjQkEERKOPvXI9Qxis/gaHk9KczbeXrMJuETO/v/hYY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:05:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2i8xu59aos"
+        },
+        {
+          "Name": "label",
+          "Value": "chat.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tjQkEERKOPvXI9Qxis/gaHk9KczbeXrMJuETO/v/hYY="
+        }
+      ]
+    },
+    {
+      "Route": "chat.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\chat.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tjQkEERKOPvXI9Qxis/gaHk9KczbeXrMJuETO/v/hYY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:05:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tjQkEERKOPvXI9Qxis/gaHk9KczbeXrMJuETO/v/hYY="
+        }
+      ]
+    },
+    {
+      "Route": "ChatHub.50ikva9gri.cs",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\ChatHub.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16995"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JQ+S3OJlEYdoAT5UvozOqRV91OMHvZgqbpLeG2GOEJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Aug 2024 07:12:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "50ikva9gri"
+        },
+        {
+          "Name": "label",
+          "Value": "ChatHub.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JQ+S3OJlEYdoAT5UvozOqRV91OMHvZgqbpLeG2GOEJk="
+        }
+      ]
+    },
+    {
+      "Route": "ChatHub.cs",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\ChatHub.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16995"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JQ+S3OJlEYdoAT5UvozOqRV91OMHvZgqbpLeG2GOEJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 Aug 2024 07:12:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JQ+S3OJlEYdoAT5UvozOqRV91OMHvZgqbpLeG2GOEJk="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.2vg0kvewjv.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3046"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XqW0prkqvvAV5omoBqR6PunPzjF+Ah7yYEj1lFWB4HQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 Aug 2024 02:03:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2vg0kvewjv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XqW0prkqvvAV5omoBqR6PunPzjF+Ah7yYEj1lFWB4HQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3046"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XqW0prkqvvAV5omoBqR6PunPzjF+Ah7yYEj1lFWB4HQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 27 Aug 2024 02:03:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XqW0prkqvvAV5omoBqR6PunPzjF+Ah7yYEj1lFWB4HQ="
+        }
+      ]
+    },
+    {
+      "Route": "image.4ng415l55r.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2428"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QJJmFVvUiXBPw/Z2SJ2dX/PaHh7Pcs6etW82XpLCL9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:04:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ng415l55r"
+        },
+        {
+          "Name": "label",
+          "Value": "image.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QJJmFVvUiXBPw/Z2SJ2dX/PaHh7Pcs6etW82XpLCL9w="
+        }
+      ]
+    },
+    {
+      "Route": "image.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2428"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QJJmFVvUiXBPw/Z2SJ2dX/PaHh7Pcs6etW82XpLCL9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:04:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QJJmFVvUiXBPw/Z2SJ2dX/PaHh7Pcs6etW82XpLCL9w="
+        }
+      ]
+    },
+    {
+      "Route": "image/6898823.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\6898823.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "988187"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P84MC+nCkAakYEkSGaZGwQfHZ54nowDTZkzaCirX5Nk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Feb 2022 03:15:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P84MC+nCkAakYEkSGaZGwQfHZ54nowDTZkzaCirX5Nk="
+        }
+      ]
+    },
+    {
+      "Route": "image/6898823.lby0ojwhdg.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\6898823.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "988187"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P84MC+nCkAakYEkSGaZGwQfHZ54nowDTZkzaCirX5Nk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Feb 2022 03:15:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lby0ojwhdg"
+        },
+        {
+          "Name": "label",
+          "Value": "image/6898823.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P84MC+nCkAakYEkSGaZGwQfHZ54nowDTZkzaCirX5Nk="
+        }
+      ]
+    },
+    {
+      "Route": "image/91656.1mu5qr823d.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\91656.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1021413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OdA5du//XiFHBJNWP+rJCdV7wWzRIx5RBl6C9x+JU9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 26 Apr 2019 04:22:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1mu5qr823d"
+        },
+        {
+          "Name": "label",
+          "Value": "image/91656.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OdA5du//XiFHBJNWP+rJCdV7wWzRIx5RBl6C9x+JU9Y="
+        }
+      ]
+    },
+    {
+      "Route": "image/91656.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\91656.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1021413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OdA5du//XiFHBJNWP+rJCdV7wWzRIx5RBl6C9x+JU9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 26 Apr 2019 04:22:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OdA5du//XiFHBJNWP+rJCdV7wWzRIx5RBl6C9x+JU9Y="
+        }
+      ]
+    },
+    {
+      "Route": "image/91657.4xbqdoa6ad.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\91657.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "908100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2GsJmH9Gnr4ECGDMuZXBUHGPQf/59BKqqexXsPgLSMA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 26 Apr 2019 04:22:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4xbqdoa6ad"
+        },
+        {
+          "Name": "label",
+          "Value": "image/91657.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2GsJmH9Gnr4ECGDMuZXBUHGPQf/59BKqqexXsPgLSMA="
+        }
+      ]
+    },
+    {
+      "Route": "image/91657.jpg",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\91657.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "908100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2GsJmH9Gnr4ECGDMuZXBUHGPQf/59BKqqexXsPgLSMA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 26 Apr 2019 04:22:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2GsJmH9Gnr4ECGDMuZXBUHGPQf/59BKqqexXsPgLSMA="
+        }
+      ]
+    },
+    {
+      "Route": "image/favicon.je7k4sgs5c.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1745"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hSmsuNzFvoPx6eQy+HhdR89fEIpUzvi/PIdd7Fhhfdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Jun 2020 19:06:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "je7k4sgs5c"
+        },
+        {
+          "Name": "label",
+          "Value": "image/favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hSmsuNzFvoPx6eQy+HhdR89fEIpUzvi/PIdd7Fhhfdo="
+        }
+      ]
+    },
+    {
+      "Route": "image/favicon.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1745"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hSmsuNzFvoPx6eQy+HhdR89fEIpUzvi/PIdd7Fhhfdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Jun 2020 19:06:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hSmsuNzFvoPx6eQy+HhdR89fEIpUzvi/PIdd7Fhhfdo="
+        }
+      ]
+    },
+    {
+      "Route": "image/hamburgerMenu.pi1grljdy1.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\hamburgerMenu.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sUp8N77It6xxY/VsHMpwQmSLirzEcBz4OdUNFTFK8GU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jul 2024 06:25:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pi1grljdy1"
+        },
+        {
+          "Name": "label",
+          "Value": "image/hamburgerMenu.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sUp8N77It6xxY/VsHMpwQmSLirzEcBz4OdUNFTFK8GU="
+        }
+      ]
+    },
+    {
+      "Route": "image/hamburgerMenu.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\hamburgerMenu.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sUp8N77It6xxY/VsHMpwQmSLirzEcBz4OdUNFTFK8GU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 24 Jul 2024 06:25:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sUp8N77It6xxY/VsHMpwQmSLirzEcBz4OdUNFTFK8GU="
+        }
+      ]
+    },
+    {
+      "Route": "image/profilePicture.cyhgjdknut.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\profilePicture.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HPqrjTiNOAvXDhwbSr9vPG8kSAeKbYB79qSq4eSej7g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 26 Jul 2024 06:09:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cyhgjdknut"
+        },
+        {
+          "Name": "label",
+          "Value": "image/profilePicture.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HPqrjTiNOAvXDhwbSr9vPG8kSAeKbYB79qSq4eSej7g="
+        }
+      ]
+    },
+    {
+      "Route": "image/profilePicture.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\image\\profilePicture.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1485"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HPqrjTiNOAvXDhwbSr9vPG8kSAeKbYB79qSq4eSej7g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 26 Jul 2024 06:09:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HPqrjTiNOAvXDhwbSr9vPG8kSAeKbYB79qSq4eSej7g="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XGW4YQECXXugjog2qBA00npHQZjR8EiwkNrcrCe7VtQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 09:21:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XGW4YQECXXugjog2qBA00npHQZjR8EiwkNrcrCe7VtQ="
+        }
+      ]
+    },
+    {
+      "Route": "index.ob4z6p9xh3.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XGW4YQECXXugjog2qBA00npHQZjR8EiwkNrcrCe7VtQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 09:21:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ob4z6p9xh3"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XGW4YQECXXugjog2qBA00npHQZjR8EiwkNrcrCe7VtQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.6xvauynjs1.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4056"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5mkEt9HMSVOGfhEcFjrAze0V891+FNAEfEGnvzDYnqA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Nov 2022 11:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6xvauynjs1"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5mkEt9HMSVOGfhEcFjrAze0V891+FNAEfEGnvzDYnqA="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4056"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5mkEt9HMSVOGfhEcFjrAze0V891+FNAEfEGnvzDYnqA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 12 Nov 2022 11:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5mkEt9HMSVOGfhEcFjrAze0V891+FNAEfEGnvzDYnqA="
+        }
+      ]
+    },
+    {
+      "Route": "links.8c1y5rd6rp.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\links.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SPxPRDhfioxulxzfD0Tr5u5U2Vdiuc27ObpTUIPB6Og=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:04:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8c1y5rd6rp"
+        },
+        {
+          "Name": "label",
+          "Value": "links.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SPxPRDhfioxulxzfD0Tr5u5U2Vdiuc27ObpTUIPB6Og="
+        }
+      ]
+    },
+    {
+      "Route": "links.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\links.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SPxPRDhfioxulxzfD0Tr5u5U2Vdiuc27ObpTUIPB6Og=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:04:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SPxPRDhfioxulxzfD0Tr5u5U2Vdiuc27ObpTUIPB6Og="
+        }
+      ]
+    },
+    {
+      "Route": "menu.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\menu.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y1Xe5f1SKorwQ0ACBVFOiiMMQkvthnx0n5Fze79fRrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 12:58:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y1Xe5f1SKorwQ0ACBVFOiiMMQkvthnx0n5Fze79fRrE="
+        }
+      ]
+    },
+    {
+      "Route": "menu.pv8xv86827.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\menu.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2897"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y1Xe5f1SKorwQ0ACBVFOiiMMQkvthnx0n5Fze79fRrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 12:58:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pv8xv86827"
+        },
+        {
+          "Name": "label",
+          "Value": "menu.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y1Xe5f1SKorwQ0ACBVFOiiMMQkvthnx0n5Fze79fRrE="
+        }
+      ]
+    },
+    {
+      "Route": "Note-2.8ltpyecuwx.txt",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\Note-2.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2308"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9AMNXHnKn73C4UeWd3JWG3SgeBX8ogwVTk/+dZA/PnU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 14:26:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8ltpyecuwx"
+        },
+        {
+          "Name": "label",
+          "Value": "Note-2.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9AMNXHnKn73C4UeWd3JWG3SgeBX8ogwVTk/+dZA/PnU="
+        }
+      ]
+    },
+    {
+      "Route": "Note-2.txt",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\Note-2.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2308"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9AMNXHnKn73C4UeWd3JWG3SgeBX8ogwVTk/+dZA/PnU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 14:26:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9AMNXHnKn73C4UeWd3JWG3SgeBX8ogwVTk/+dZA/PnU="
+        }
+      ]
+    },
+    {
+      "Route": "Note-3.f3bfpvbgby.txt",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\Note-3.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6yriG522Gk0GW/4VKUY7Mk/SANwYGuaulxdMk+4xEqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 14:34:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f3bfpvbgby"
+        },
+        {
+          "Name": "label",
+          "Value": "Note-3.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6yriG522Gk0GW/4VKUY7Mk/SANwYGuaulxdMk+4xEqY="
+        }
+      ]
+    },
+    {
+      "Route": "Note-3.txt",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\Note-3.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6yriG522Gk0GW/4VKUY7Mk/SANwYGuaulxdMk+4xEqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 14:34:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6yriG522Gk0GW/4VKUY7Mk/SANwYGuaulxdMk+4xEqY="
+        }
+      ]
+    },
+    {
+      "Route": "Program.38x275ce02.cs",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\Program.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s+9Okskb6JR84dGA6XzkVooGxAvKSYLLRqQgKOot8kE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Jul 2024 08:40:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "38x275ce02"
+        },
+        {
+          "Name": "label",
+          "Value": "Program.cs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-s+9Okskb6JR84dGA6XzkVooGxAvKSYLLRqQgKOot8kE="
+        }
+      ]
+    },
+    {
+      "Route": "Program.cs",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\Program.cs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"s+9Okskb6JR84dGA6XzkVooGxAvKSYLLRqQgKOot8kE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Jul 2024 08:40:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-s+9Okskb6JR84dGA6XzkVooGxAvKSYLLRqQgKOot8kE="
+        }
+      ]
+    },
+    {
+      "Route": "raceGame.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\raceGame.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cd40La0ad+a0+vaOd8Yjw/iqnyqksbnnuOfqKdYwigo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:25:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cd40La0ad+a0+vaOd8Yjw/iqnyqksbnnuOfqKdYwigo="
+        }
+      ]
+    },
+    {
+      "Route": "raceGame.veql1a229h.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\raceGame.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9957"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cd40La0ad+a0+vaOd8Yjw/iqnyqksbnnuOfqKdYwigo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:25:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veql1a229h"
+        },
+        {
+          "Name": "label",
+          "Value": "raceGame.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cd40La0ad+a0+vaOd8Yjw/iqnyqksbnnuOfqKdYwigo="
+        }
+      ]
+    },
+    {
+      "Route": "rudeWords.txt",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\rudeWords.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BBOUjwsATwPMCm6qAV8yu+0q07RQXX0SxLfqJhMDKts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 10:28:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BBOUjwsATwPMCm6qAV8yu+0q07RQXX0SxLfqJhMDKts="
+        }
+      ]
+    },
+    {
+      "Route": "rudeWords.w7ug47vg02.txt",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\rudeWords.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BBOUjwsATwPMCm6qAV8yu+0q07RQXX0SxLfqJhMDKts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 10:28:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w7ug47vg02"
+        },
+        {
+          "Name": "label",
+          "Value": "rudeWords.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BBOUjwsATwPMCm6qAV8yu+0q07RQXX0SxLfqJhMDKts="
+        }
+      ]
+    },
+    {
+      "Route": "sound/bombSoundEffect.7mf4wngoy7.MP3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\bombSoundEffect.MP3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22201"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8fse+5bAE9aJhMabD8FYiJftIcs+PCjm1K5R3Hm1nak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:22:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7mf4wngoy7"
+        },
+        {
+          "Name": "label",
+          "Value": "sound/bombSoundEffect.MP3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8fse+5bAE9aJhMabD8FYiJftIcs+PCjm1K5R3Hm1nak="
+        }
+      ]
+    },
+    {
+      "Route": "sound/bombSoundEffect.MP3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\bombSoundEffect.MP3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22201"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8fse+5bAE9aJhMabD8FYiJftIcs+PCjm1K5R3Hm1nak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:22:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8fse+5bAE9aJhMabD8FYiJftIcs+PCjm1K5R3Hm1nak="
+        }
+      ]
+    },
+    {
+      "Route": "sound/bubble-laser.dxnuhuceb2.wav",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\bubble-laser.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1245548"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XwLos3uK6knxY7Z8ySC7sYOjUYHuEe6XnIPnj7vVKoc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 13:48:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dxnuhuceb2"
+        },
+        {
+          "Name": "label",
+          "Value": "sound/bubble-laser.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XwLos3uK6knxY7Z8ySC7sYOjUYHuEe6XnIPnj7vVKoc="
+        }
+      ]
+    },
+    {
+      "Route": "sound/bubble-laser.wav",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\bubble-laser.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1245548"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XwLos3uK6knxY7Z8ySC7sYOjUYHuEe6XnIPnj7vVKoc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 13:48:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XwLos3uK6knxY7Z8ySC7sYOjUYHuEe6XnIPnj7vVKoc="
+        }
+      ]
+    },
+    {
+      "Route": "sound/clickSound.8thmfr80hp.wav",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\clickSound.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VMGSsppKzY3bzWiqnDQYSIXNxSzsARx8IZR7J40SpMQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:14:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8thmfr80hp"
+        },
+        {
+          "Name": "label",
+          "Value": "sound/clickSound.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VMGSsppKzY3bzWiqnDQYSIXNxSzsARx8IZR7J40SpMQ="
+        }
+      ]
+    },
+    {
+      "Route": "sound/clickSound.wav",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\clickSound.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VMGSsppKzY3bzWiqnDQYSIXNxSzsARx8IZR7J40SpMQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:14:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VMGSsppKzY3bzWiqnDQYSIXNxSzsARx8IZR7J40SpMQ="
+        }
+      ]
+    },
+    {
+      "Route": "sound/game.a1snpcwa4y.mp3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\game.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3228316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rtZ9gUs6Xm1btC5q+s8M4xRx6MQKNok2GdlXKzC2Tjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 30 Jul 2024 00:47:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a1snpcwa4y"
+        },
+        {
+          "Name": "label",
+          "Value": "sound/game.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rtZ9gUs6Xm1btC5q+s8M4xRx6MQKNok2GdlXKzC2Tjw="
+        }
+      ]
+    },
+    {
+      "Route": "sound/game.mp3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\game.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3228316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rtZ9gUs6Xm1btC5q+s8M4xRx6MQKNok2GdlXKzC2Tjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 30 Jul 2024 00:47:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rtZ9gUs6Xm1btC5q+s8M4xRx6MQKNok2GdlXKzC2Tjw="
+        }
+      ]
+    },
+    {
+      "Route": "sound/message_received.7jsr8f38ol.mp3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\message_received.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16344"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M53by/rewrt+KxsbvOAHeuQvYsP9Pw6JyOn+VPT1mzg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jul 2024 09:29:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7jsr8f38ol"
+        },
+        {
+          "Name": "label",
+          "Value": "sound/message_received.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M53by/rewrt+KxsbvOAHeuQvYsP9Pw6JyOn+VPT1mzg="
+        }
+      ]
+    },
+    {
+      "Route": "sound/message_received.mp3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\message_received.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16344"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M53by/rewrt+KxsbvOAHeuQvYsP9Pw6JyOn+VPT1mzg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jul 2024 09:29:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M53by/rewrt+KxsbvOAHeuQvYsP9Pw6JyOn+VPT1mzg="
+        }
+      ]
+    },
+    {
+      "Route": "sound/message_send.khnbhwq3o3.mp3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\message_send.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10242"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qNwmqVE4schmCw/z46n0ulQj+KC1w5dx10zezKO9V+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jul 2024 09:31:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "khnbhwq3o3"
+        },
+        {
+          "Name": "label",
+          "Value": "sound/message_send.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qNwmqVE4schmCw/z46n0ulQj+KC1w5dx10zezKO9V+c="
+        }
+      ]
+    },
+    {
+      "Route": "sound/message_send.mp3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\message_send.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10242"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qNwmqVE4schmCw/z46n0ulQj+KC1w5dx10zezKO9V+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Jul 2024 09:31:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qNwmqVE4schmCw/z46n0ulQj+KC1w5dx10zezKO9V+c="
+        }
+      ]
+    },
+    {
+      "Route": "sound/raceGameBg.mp3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\raceGameBg.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1275579"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x6BKYkv+NPtjw95I8CySwLXDEq7GLzjVuulSetrpAzI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 14:20:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x6BKYkv+NPtjw95I8CySwLXDEq7GLzjVuulSetrpAzI="
+        }
+      ]
+    },
+    {
+      "Route": "sound/raceGameBg.z5rpzelw6i.mp3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\raceGameBg.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1275579"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x6BKYkv+NPtjw95I8CySwLXDEq7GLzjVuulSetrpAzI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 14:20:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z5rpzelw6i"
+        },
+        {
+          "Name": "label",
+          "Value": "sound/raceGameBg.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x6BKYkv+NPtjw95I8CySwLXDEq7GLzjVuulSetrpAzI="
+        }
+      ]
+    },
+    {
+      "Route": "sound/raceSoundEffect.MP3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\raceSoundEffect.MP3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oR6NR+hPWM8PxYecrutP7q+yZ4N8SPkIKNzYOJa+VXs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 14:00:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oR6NR+hPWM8PxYecrutP7q+yZ4N8SPkIKNzYOJa+VXs="
+        }
+      ]
+    },
+    {
+      "Route": "sound/raceSoundEffect.pq2b4uosbb.MP3",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\sound\\raceSoundEffect.MP3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oR6NR+hPWM8PxYecrutP7q+yZ4N8SPkIKNzYOJa+VXs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 14:00:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pq2b4uosbb"
+        },
+        {
+          "Name": "label",
+          "Value": "sound/raceSoundEffect.MP3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oR6NR+hPWM8PxYecrutP7q+yZ4N8SPkIKNzYOJa+VXs="
+        }
+      ]
+    },
+    {
+      "Route": "stickers.ibtaltb6jc.json",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7qskIenSeYpivahKob5wPObQHe631K5GsYUrPhqLxdA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:27:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ibtaltb6jc"
+        },
+        {
+          "Name": "label",
+          "Value": "stickers.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7qskIenSeYpivahKob5wPObQHe631K5GsYUrPhqLxdA="
+        }
+      ]
+    },
+    {
+      "Route": "stickers.json",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7qskIenSeYpivahKob5wPObQHe631K5GsYUrPhqLxdA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:27:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7qskIenSeYpivahKob5wPObQHe631K5GsYUrPhqLxdA="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_1.g6qbjaxrxg.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "191332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SIRsT5AdTgxSA3bE8yZehlDiCOoDyqEzas8jwCKpZNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 15:09:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g6qbjaxrxg"
+        },
+        {
+          "Name": "label",
+          "Value": "stickers/sticker_1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SIRsT5AdTgxSA3bE8yZehlDiCOoDyqEzas8jwCKpZNw="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_1.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "191332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SIRsT5AdTgxSA3bE8yZehlDiCOoDyqEzas8jwCKpZNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 24 Aug 2024 15:09:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SIRsT5AdTgxSA3bE8yZehlDiCOoDyqEzas8jwCKpZNw="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_2.0os6i8appb.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YNfIJWmY4euMm61JPuBnOc0S1GhVOwxA0SoUQywotsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:22:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0os6i8appb"
+        },
+        {
+          "Name": "label",
+          "Value": "stickers/sticker_2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YNfIJWmY4euMm61JPuBnOc0S1GhVOwxA0SoUQywotsY="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_2.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "174313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YNfIJWmY4euMm61JPuBnOc0S1GhVOwxA0SoUQywotsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:22:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YNfIJWmY4euMm61JPuBnOc0S1GhVOwxA0SoUQywotsY="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_3.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "180289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FB1TD30zGr+NGEStPTYb3JL+O5twCPy25MId8OReBQ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FB1TD30zGr+NGEStPTYb3JL+O5twCPy25MId8OReBQ0="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_3.scikx20png.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "180289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FB1TD30zGr+NGEStPTYb3JL+O5twCPy25MId8OReBQ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "scikx20png"
+        },
+        {
+          "Name": "label",
+          "Value": "stickers/sticker_3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FB1TD30zGr+NGEStPTYb3JL+O5twCPy25MId8OReBQ0="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_4.iujwao5njc.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hhnDGF6+eNq9La9sSB39AnlhneCLkrlns6kNIgdjuEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iujwao5njc"
+        },
+        {
+          "Name": "label",
+          "Value": "stickers/sticker_4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hhnDGF6+eNq9La9sSB39AnlhneCLkrlns6kNIgdjuEY="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_4.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hhnDGF6+eNq9La9sSB39AnlhneCLkrlns6kNIgdjuEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hhnDGF6+eNq9La9sSB39AnlhneCLkrlns6kNIgdjuEY="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_5.ldkvaicb0x.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123516"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FzWUj9+q/Ef0Jue2M32Sfh9zC+7wVdYxHOFHcknRorQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ldkvaicb0x"
+        },
+        {
+          "Name": "label",
+          "Value": "stickers/sticker_5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FzWUj9+q/Ef0Jue2M32Sfh9zC+7wVdYxHOFHcknRorQ="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_5.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123516"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FzWUj9+q/Ef0Jue2M32Sfh9zC+7wVdYxHOFHcknRorQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FzWUj9+q/Ef0Jue2M32Sfh9zC+7wVdYxHOFHcknRorQ="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_6.hnos1fgf1d.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "185010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M5dmdi+ZfZOeewNNEmCsNO7ChSNjfisWqT4cBDychnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hnos1fgf1d"
+        },
+        {
+          "Name": "label",
+          "Value": "stickers/sticker_6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M5dmdi+ZfZOeewNNEmCsNO7ChSNjfisWqT4cBDychnc="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_6.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "185010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M5dmdi+ZfZOeewNNEmCsNO7ChSNjfisWqT4cBDychnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M5dmdi+ZfZOeewNNEmCsNO7ChSNjfisWqT4cBDychnc="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_7.mr77j71x2s.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "207574"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7h1yOJ9fakXf4SL5qmC6OSsw/Id+SSuAk5+ZkGi+8uA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mr77j71x2s"
+        },
+        {
+          "Name": "label",
+          "Value": "stickers/sticker_7.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7h1yOJ9fakXf4SL5qmC6OSsw/Id+SSuAk5+ZkGi+8uA="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_7.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "207574"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7h1yOJ9fakXf4SL5qmC6OSsw/Id+SSuAk5+ZkGi+8uA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7h1yOJ9fakXf4SL5qmC6OSsw/Id+SSuAk5+ZkGi+8uA="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_8.lvha16kz5p.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143571"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/w12axOuNh/NchOQWqf9bVPBPXi2SwHTSX8YkO7gf+E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lvha16kz5p"
+        },
+        {
+          "Name": "label",
+          "Value": "stickers/sticker_8.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/w12axOuNh/NchOQWqf9bVPBPXi2SwHTSX8YkO7gf+E="
+        }
+      ]
+    },
+    {
+      "Route": "stickers/sticker_8.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\stickers\\sticker_8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143571"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/w12axOuNh/NchOQWqf9bVPBPXi2SwHTSX8YkO7gf+E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 Aug 2024 01:23:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/w12axOuNh/NchOQWqf9bVPBPXi2SwHTSX8YkO7gf+E="
+        }
+      ]
+    },
+    {
+      "Route": "ticTaeToe.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\ticTaeToe.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uh1cPN3P0WzGKrfztyZHHCcLxYa1Y1+I1emI5D2YrA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:19:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uh1cPN3P0WzGKrfztyZHHCcLxYa1Y1+I1emI5D2YrA0="
+        }
+      ]
+    },
+    {
+      "Route": "ticTaeToe.miln2t40bx.html",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\文档\\GitHub\\Let-s-Chat-App-Chat-Game-\\wwwroot\\ticTaeToe.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uh1cPN3P0WzGKrfztyZHHCcLxYa1Y1+I1emI5D2YrA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 Aug 2024 22:19:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "miln2t40bx"
+        },
+        {
+          "Name": "label",
+          "Value": "ticTaeToe.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uh1cPN3P0WzGKrfztyZHHCcLxYa1Y1+I1emI5D2YrA0="
+        }
+      ]
+    }
+  ]
+}

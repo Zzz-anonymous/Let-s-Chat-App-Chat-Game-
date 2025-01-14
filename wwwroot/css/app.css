@@ -1,0 +1,172 @@
+﻿/* Font ======================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General ==================================================================== */
+
+body, input, select, button,textarea {
+    font: 16px 'Roboto', sans-serif;
+    
+}
+
+body{
+    margin: 0;
+}
+
+/* chat.html's body tag */
+.chat {
+    margin: 0;
+    height: 100dvh;
+    display: grid;
+    grid: auto 1fr auto / auto;
+}
+
+
+header {
+    padding: 10px;
+    white-space: nowrap;
+    background-color: #2a0850;
+    color: #ccc;
+    display: flex;
+    place-items: center;
+    text-shadow: 3px -1px 11px rgba(238,32,157,0.68);
+}
+
+
+header h1 {
+    flex: 1;
+    margin: 0;
+    background: url(../image/favicon.png) no-repeat left center / 32px 32px;
+    padding-left: 40px;
+}
+
+header button {
+    color: #000;
+    padding: 3px 6px;
+    border-radius: 3px;
+    background-color: #ccc;
+    font-size: 1.5rem;
+}
+
+header .menu{
+    background: url(../image/hamburgerMenu.png) no-repeat right center / 32px 32px;
+}
+
+
+/* main {
+    
+    padding: 10px;
+} */
+
+.chatFooter {
+    padding: 10px;
+    white-space: nowrap;
+    background-color: #2a0850;
+}
+
+input[type=text] {
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* index ======================================================================= */
+.formIndex {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    place-content: start;
+    place-items: center start;
+    margin-left: 10px;
+}
+
+.formIndex > section {
+    grid-column: 1 / -1;
+}
+
+.photo {
+    display: block;
+    border: 1px solid #666;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+/* Chat ======================================================================= */
+form {
+    display: flex;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form input{
+    margin-bottom: 20px;
+}
+
+#chat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#chat li {
+    margin-bottom: 3px;
+}
+
+#chat li div {
+    display: inline-block;
+    max-width: 80%;
+    padding: 3px 6px;
+    border-radius: 3px;
+    word-break: break-all;
+}
+
+#chat li.caller {
+    text-align: right;
+}
+
+#chat li.caller div {
+    background-color: #5acce3;
+}
+
+#chat li.others {
+    text-align: left;
+}
+
+#chat li.others div {
+    background-color: #f598f2;
+}
+
+#chat li.status {
+    text-align: center;
+}
+
+#chat li.status div {
+    background-color: #ffd54f;
+}
+
+/* Chat Navigation bar ======================================================================= */
+nav ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* Game List */
+/***** Table *****/
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    color: #abddd7;
+    text-shadow: 3px -1px 11px rgba(238,32,157,0.58);
+}

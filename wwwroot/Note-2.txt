@@ -1,0 +1,82 @@
+=========================
+👆 EWT-08 PressRT 2.0 👆
+=========================
+
+dotnet dev-certs https --trust
+dotnet watch run
+
+* Data file = EWT-08.zip
+
+-------------
+CSS Animation
+-------------
+
+@keyframes name {
+    from {...}
+    to   {...}
+}
+
+@keyframes name {
+      0% {...}
+     25% {...}
+     50% {...}
+     75% {...}
+    100% {...}
+}
+
+animation-name             = (string)
+animation-duration         = (time)
+animation-timing-function  = ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(...)
+animation-delay            = (time)
+animation-iteraction-count = (number) | infinite
+animation-direction        = normal | reverse | alternate | alternate-reverse
+animation-fill-mode        = none | forwards | backwards | both
+animation-play-state       = running | paused
+
+animation: swing 0.3s linear 0s infinite alternate;
+
+
+--------------
+CSS Transition
+--------------
+
+transition-property        = (string) | all
+transition-duration        = (time)
+transition-timing-function = ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(...)
+transition-delay           = (time)
+
+transition: margin-left 0.3s linear;
+
+
+-----
+Ideas
+-----
+- Group communication concept = private chat, private draw, etc.
+- Game lobby concept = create, join and leave session
+- Private game or room = join using passcode
+- Integrate with chat = lobby and in-game
+- Online user list = invite, accept and reject
+- Alternating key press to move: 1, 2, 1, 2, 1, 2, ...
+- Random key press to move = random alphabet for each move
+- More players per game (if suitable) = use array or list
+- Flexi player count = 2 or 3 or 4 or more
+- Waiting room before game starts
+- Viewers or audiences = observe but not play
+- Multiple rounds
+- Game elements: HP, life, score, item, boast, timer, etc.
+- Leaderboard or scoreboard
+- Different animations for different states
+- Background music and sound effect(/)
+- Use photo (webcam) rather than icon (/ profile picture)
+- Race games: (/)
+  🐯--->
+  🦁--->
+- Push games:
+  🐯---><---🦁
+- Different game modes to choose
+- Different difficulty levels
+- Other games (different genres):
+  - Typing games (who can type faster accurately)
+  - Draw-and-guess
+  - Flip-and-match
+  - Others

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+       body{
+        background-image: url("image/91657.jpg");
+        background-size: cover;
+       }
+
+       main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+       h2{
+        color: #e3e1e3;
+        text-shadow: 3px -1px 11px rgba(238,32,157,0.68);
+       }
+
+       nav, nav a,ol{
+        color: #abddd7;
+        text-shadow: 3px -1px 11px rgba(238,32,157,0.68);
+       }
+    </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Menu</title>
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Chat Menu</h1>
+    </header>
+    <nav class="nav">
+        <ul style="display: flex;">
+            <li><a href="chat.html">Home </a></li> &nbsp; > &nbsp;
+            <li><a href="menu.html"> Users </a></li> &nbsp; | &nbsp;
+            <li><a href="image.html">Images </a></li> &nbsp;| &nbsp;
+            <li><a href="links.html">Links  </a></li> 
+        </ul>
+    </nav>
+    <main>
+        <h2>Active Users</h2>
+        <ol id="user-list"></ol>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+        $(document).ready(function () {
+            const name = sessionStorage.getItem('name');
+            const profilePicture = sessionStorage.getItem('profilePicture');
+
+            if (!name) {
+                location = '/';
+                throw 'ERROR: Invalid name';
+            }
+
+            const param = $.param({ name, profilePicture });
+
+            const con = new signalR.HubConnectionBuilder()
+                .withUrl('/hub?' + param)
+                .build();
+
+            con.start().then(() => {
+                con.invoke('GetActiveUsers').then(users => {
+                    updateUserList(users);
+                });
+            });
+
+            con.on('UpdateStatus', (count, status, users) => {
+                updateUserList(users);
+            });
+
+            function updateUserList(users) {
+                $('#user-list').empty();
+                users.forEach(user => {
+                    const userProfilePicture = user.profilePicture || 'image/profilePicture.png';
+                    $('#user-list').append(`
+                <li>
+                    <img src="${userProfilePicture}" alt="Profile Picture" style="width:50px; height:50px; border-radius:50%; margin-right:10px;">
+                    ${user.name}
+                </li>
+            `);
+                });
+            }
+        });
+
+    </script>
+</body>
+
+</html>

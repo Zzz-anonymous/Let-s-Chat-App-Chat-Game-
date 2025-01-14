@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0 auto;
+            background: url("image/6898823.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        header h1 {
+            padding: 20px;
+            margin: 0;
+            background-color: #2a0850;
+            color: #ccc;
+            text-align: center;
+            text-shadow: 3px -1px 11px rgba(238, 32, 157, 0.68);
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .row button {
+            height: 80px;
+            width: 80px;
+            background-color: rgb(45, 181, 199);
+            box-shadow: 17px 8px 68px -1px rgba(0, 7, 209, 1);
+            border: 0px transparent;
+            /* border-radius: 50%; */
+            margin: 4px;
+            padding: 4px;
+        }
+
+        .play-area {
+            width: 45%;
+            padding: 10px;
+            float: left;
+        }
+
+        #leftSide {
+            text-align: left;
+        }
+
+        #rightSide {
+            text-align: right;
+        }
+
+        .sticker {
+            width: 100px;
+            height: 100px;
+        }
+
+        #dialog {
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        #dialog::backdrop,
+        #stickers::backdrop {
+            background: #0009;
+        }
+
+        #status {
+            color: #e3e1e3;
+            text-shadow: 3px -1px 11px rgba(32, 125, 238, 0.68);
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        #screen {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e3e1e3;
+            text-shadow: 3px -1px 11px rgba(32, 125, 238, 0.68);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading -->
+    <header class="">
+        <h1>TIC-TAC-TOE</h1>
+    </header>
+    <br>
+    <br>
+    <div id="start-screen">
+        <p id="status">Waiting another player...</p>
+    </div>
+    <div>
+        <!-- Inform area for player's turn -->
+        <h4 id="screen">
+            <!-- PLAYER 1 TURN FOLLOWS -->
+        </h4>
+    </div>
+    <br>
+    <div class="container">
+        <!-- Role A Sticker Button -->
+        <div style="display: flex; flex-direction: column;align-items: center;">
+            <img src="" alt="" id="APic">
+            <span id="nameA" style="color: #e3e1e3;
+                text-shadow: 3px -1px 11px rgba(32, 125, 238, 0.68);"></span>
+            <button type="button" id="stickerButtonA" style="text-align: center;">Sticker</button>
+            <dialog id="stickersA">
+                <form method="dialog"><button>X</button></form>
+                <div id="stickerPanelA"></div>
+            </dialog>
+            <div id="stickerPopupA" class="hidden"></div>
+        </div>
+
+
+        <div class="row">
+            <div> </div>
+            <div>
+                <!-- Playing Canvas -->
+                <table>
+                    <tr>
+                        <td><button class="sq1 r" data-position="0"></button></td>
+                        <td><button class="sq2 r" data-position="1"></button></td>
+                        <td><button class="sq3 r" data-position="2"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="sq4 r" data-position="3"></button></td>
+                        <td><button class="sq5 r" data-position="4"></button></td>
+                        <td><button class="sq6 r" data-position="5"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="sq7 r" data-position="6"></button></td>
+                        <td><button class="sq8 r" data-position="7"></button></td>
+                        <td><button class="sq9 r" data-position="8"></button></td>
+                    </tr>
+                </table>
+
+                <br>
+                <br>
+            </div>
+            <div> </div>
+        </div>
+        <div style="display: flex; flex-direction: column;align-items: center;">
+            <img src="" alt="" id="BPic">
+            <span id="nameB" style="color: #e3e1e3;
+                text-shadow: 3px -1px 11px rgba(32, 125, 238, 0.68);"></span>
+            <button type="button" id="stickerButtonB">Sticker</button>
+
+            <dialog id="stickersB">
+                <form method="dialog"><button>X</button></form>
+                <div id="stickerPanelB"></div>
+            </dialog>
+            <div id="stickerPopupB" class="hidden"></div>
+        </div>
+    </div>
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="sound/game.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+        <!-- Sound Effects -->
+    <audio id="se-music">
+        <source src="sound/clickSound.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script>
+        // Checking =============================
+        const name = sessionStorage.getItem('name') || 'Guest';
+        const profilePicture = sessionStorage.getItem('profilePicture') || 'image/profilePicture.png';
+
+        if (!name || !profilePicture) {
+            console.error('ERROR: Invalid profile picture or name');
+            location.href = 'chat.html';
+            throw new Error('Invalid profile picture or name');
+        }
+
+        const gameId = new URLSearchParams(window.location.search).get('gameId');
+
+        if (!gameId) {
+            console.error('ERROR: Invalid game ID');
+            //location.href = 'chat.html';
+            throw new Error('Invalid game ID');
+        }
+
+
+        let started = false;
+        let role = null;
+        let player1Name = '';
+        let player1ProfilePicture = '';
+        let player2Name = '';
+        let player2ProfilePicture = '';
+        let player1Symbol = 'fa-circle'; // Symbol for player 1
+        let player2Symbol = 'fa-times'; // Symbol for player 2
+        const $status = $('#status');
+
+        // ========================================================================================
+        // Events
+        // ========================================================================================
+        function check(symbol) {
+            const symbolClass = symbol === 'fa-circle' ? 'fa-circle' : 'fa-times';
+            return [...Array(9).keys()].some(i => {
+                const row = Math.floor(i / 3);
+                const col = i % 3;
+                return (
+                    (i % 3 === 0 && $(".sq" + (i + 1)).hasClass(symbolClass) && $(".sq" + (i + 2)).hasClass(symbolClass) && $(".sq" + (i + 3)).hasClass(symbolClass)) || // Check rows
+                    (row === 0 && $(".sq" + (i + 1)).hasClass(symbolClass) && $(".sq" + (i + 4)).hasClass(symbolClass) && $(".sq" + (i + 7)).hasClass(symbolClass)) || // Check columns
+                    (i === 0 && $(".sq1").hasClass(symbolClass) && $(".sq5").hasClass(symbolClass) && $(".sq9").hasClass(symbolClass)) || // Diagonal
+                    (i === 2 && $(".sq3").hasClass(symbolClass) && $(".sq5").hasClass(symbolClass) && $(".sq7").hasClass(symbolClass)) // Diagonal
+                );
+            });
+        }
+
+        // Sticker Selection
+        function openStickerDialog(role) {
+            const dialogId = role === 'A' ? 'stickersA' : 'stickersB';
+            const dialog = document.getElementById(dialogId);
+            dialog.showModal();
+
+            fetch('stickers.json')
+                .then(response => response.json())
+                .then(data => {
+                    const stickerPanelId = role === 'A' ? 'stickerPanelA' : 'stickerPanelB';
+                    const stickerPanel = document.getElementById(stickerPanelId);
+                    stickerPanel.innerHTML = ''; // Clear existing stickers
+                    data.stickers.forEach(sticker => {
+                        const img = document.createElement('img');
+                        img.src = sticker.url;
+                        img.alt = sticker.name;
+                        img.classList.add('sticker');
+                        img.addEventListener('click', () => sendSticker(sticker.url, role));
+                        stickerPanel.appendChild(img);
+                    });
+                })
+                .catch(error => console.error('Error loading stickers:', error));
+        }
+
+        function sendSticker(url, role) {
+            const playArea = role === 'A' ? document.getElementById('stickerPopupA') : document.getElementById('stickerPopupB');
+            const stickerElement = document.createElement('img');
+            stickerElement.src = url;
+            stickerElement.classList.add('sticker');
+            playArea.appendChild(stickerElement);
+
+            // Pop up the sticker for a few seconds
+            const stickerPopupId = role === 'A' ? 'stickerPopupA' : 'stickerPopupB';
+            const stickerPopup = document.getElementById(stickerPopupId);
+            stickerPopup.innerHTML = ''; // Clear existing content
+            stickerPopup.appendChild(stickerElement.cloneNode());
+            stickerPopup.classList.remove('hidden');
+
+            setTimeout(() => {
+                stickerPopup.classList.add('hidden');
+            }, 3000);
+
+            // Send the sticker to the server via SignalR
+            con.invoke("SendStickers", role, url).catch(err => console.error(err.toString()));
+        }
+
+        // Disable all buttons
+        function disableButtons() {
+            $(".container .row .r").prop("disabled", true);
+        }
+
+        // Enable all buttons
+        function enableButtons() {
+            $(".r").prop("disabled", false);
+        }
+
+        function checkDraw() {
+            return $("button").toArray().every(button => $(button).hasClass("fa-times") || $(button).hasClass("fa-circle")) && !check("fa-circle") && !check("fa-times");
+        }
+
+
+        // ========================================================================================
+        // Connect
+        // ========================================================================================
+
+        const param = $.param({ page: 'ticTaeToe', profilePicture, name, gameId });
+
+        const con = new signalR.HubConnectionBuilder()
+            .withUrl('/hub?' + param)
+            .build();
+
+        con.onclose(err => {
+            alert('Disconnected');
+            location = 'chat.html';
+        });
+
+        con.on('Reject', () => {
+            location = 'chat.html';
+        });
+
+        con.on('RoleAssigned', (assignedRole) => {
+            console.log("Role assigned:", assignedRole);
+            role = assignedRole;
+
+            // Enable/disable the sticker buttons based on role
+            if (role === 'A') {
+                document.getElementById('stickerButtonB').style.display = 'none';
+                document.getElementById('stickerButtonA').addEventListener('click', function () {
+                    openStickerDialog('A');
+                });
+
+            } else if (role === 'B') {
+                document.getElementById('stickerButtonA').style.display = 'none';
+                document.getElementById('stickerButtonB').addEventListener('click', function () {
+                    openStickerDialog('B');
+                });
+            }
+        });
+    
+        con.on('Ready', (role, game) => {
+            
+            console.log('disableButtons function called.');
+            if (game.playerA) {
+                $('#nameA').text(game.playerA.name);
+                $('#APic').attr('src', game.playerA.profilePicture).show();
+            }
+
+            if (game.playerB) {
+                $('#nameB').text(game.playerB.name);
+                $('#BPic').attr('src', game.playerB.profilePicture).show();
+            }
+
+            if (role === 'B') {
+                //role = role;
+                $status.text('Ready! Game will start shortly...');
+            }
+            disableButtons();
+        });
+
+        con.on('Start', () => {
+            disableButtons();
+            setTimeout(() => $status.text('Ready... 3'), 1000);
+            setTimeout(() => $status.text('Ready... 2'), 2000);
+            setTimeout(() => $status.text('Ready... 1'), 3000);
+            setTimeout(() => {
+                started = true;
+                $status.text('Start!');
+                enableButtons();
+            }, 4000);
+
+        });
+
+        con.on('UpdateGame', (currentTurn, player1Name, player1ProfilePicture, player2Name, player2ProfilePicture) => {
+            $("#screen").html(`
+            <div style="">
+                    <img src="${currentTurn === 'A' ? player1ProfilePicture : player2ProfilePicture}" width="50" height="50" alt="${currentTurn === 'A' ? player1Name : player2Name}" />
+                    <span>${currentTurn === 'A' ? player1Name : player2Name}'s TURN</span>
+                </div>
+            `);
+            if (started && (role === currentTurn)) {
+                enableButtons();  // Only enable buttons if it's the player's turn and the game has started
+            }
+        });
+
+        $(".r").click(function () {
+            const soundEffect = document.getElementById("se-music");
+            // Only proceed if the button is enabled
+            if ($(this).is(":disabled")) return;
+            soundEffect.play();
+            // Get the position of the clicked button
+            const position = $(this).data("position");
+
+            // Ensure the role is set before sending the move
+            if (role === null) {
+                console.error("Role is not assigned");
+                alert("Role is not assigned. Please wait for the game to start.");
+                return;
+            }
+
+            // Send the move to the server
+            con.invoke('Turn', role, position).catch(err => console.error(err));
+
+            // Disable all buttons until the server updates the game state
+            $(".r").prop("disabled", true);
+        });
+
+        // Handling the server response for error
+        con.on("InvalidMove", (message) => {
+            alert(message); // Show an alert or update UI to show 
+            enableButtons();
+        });
+
+        con.on('UpdateBoard', (board) => {
+            // Iterate through the board array and update button states
+            board.forEach((symbol, position) => {
+                const $button = $(`button[data-position="${position}"]`);
+
+                // Remove previous symbols
+                $button.removeClass('fa-circle fa-times');
+
+                // Add the appropriate Font Awesome class
+                if (symbol === 'X') {
+                    $button.addClass('fa fa-times');
+                } else if (symbol === 'O') {
+                    $button.addClass('fa fa-circle');
+                }
+
+                // Ensure button has a white color
+                $button.css({
+                    "color": "#ccc",
+                    "text-shadow": "3px -1px 11px rgba(238,32,157,0.68)",
+                    "font-size": "40px"
+                });
+
+                console.log(`It's ${role}'s turn`);
+            });
+        });
+        
+        con.on('ReceiveStickers', (role, url) => {
+            console.log("ReceiveSticker called with role:", role);
+            
+            // Determine which popup element to use based on the role
+            const stickerPopupId = role === 'A' ? 'stickerPopupA' : 'stickerPopupB';
+            const stickerPopup = document.getElementById(stickerPopupId);
+
+            // Set the sticker image
+            stickerPopup.innerHTML = `<img src="${url}" alt="Sticker" class="sticker">`;
+
+            // Display the sticker popup
+            stickerPopup.classList.remove('hidden');
+
+            // Hide the sticker popup after a few seconds
+            setTimeout(() => {
+                stickerPopup.classList.add('hidden');
+            }, 3000);
+        });
+
+        con.start().then(() => {
+            console.log("Connection started");
+
+            // Enable and play the music
+            const music = document.getElementById("bg-music");
+            music.play();
+
+        }).catch(err => console.error(err.toString()));
+
+        con.on('GameOver', (message) => {
+            $("#screen").text(message);
+            $(".r").prop("disabled", true); // Disable all buttons after game over
+
+            // Set a timeout to redirect after 3 seconds
+            setTimeout(() => {
+                window.location.href = "chat.html";
+            }, 3000); // 3000 milliseconds = 3 seconds
+        });
+
+        con.on('Error', (message) => {
+            console.error('Error from server:', message);
+            // Optionally display the error message to the user
+            alert(`Error: ${message}`);
+        });
+
+        con.on("Left", username => {
+            let id = setTimeout(() => location = 'chat.html', 3000);
+            while (--id) clearTimeout(id);
+        
+            started = false;
+            // Display a message indicating that the player left
+            $status.text(`Player ${username} left.You win!`);
+        });
+
+    </script>
+
+</body>
+
+</html>

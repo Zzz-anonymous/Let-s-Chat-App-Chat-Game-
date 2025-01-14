@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Display</title>
+    <link href="css/app.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("image/91657.jpg");
+            background-size: cover;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            color: #e3e1e3;
+            text-shadow: 3px -1px 11px rgba(238, 32, 157, 0.68);
+        }
+
+        nav, nav a{
+            color: #abddd7;
+            text-shadow: 3px -1px 11px rgba(238, 32, 157, 0.68);
+        }
+
+        .link-container {
+            margin: 20px;
+        }
+
+        .link-item {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Chat Menu</h1>
+    </header>
+    <nav class="nav">
+        <ul style="display: flex;">
+            <li><a href="chat.html">Home </a></li> &nbsp; > &nbsp;
+            <li><a href="menu.html"> Users </a></li> &nbsp; | &nbsp;
+            <li><a href="image.html">Images </a></li> &nbsp;| &nbsp;
+            <li><a href="links.html">Links </a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Link Display</h2>
+        <ol id="link-container">
+        </ol>
+    </main>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Retrieve the links from localStorage
+            const links = JSON.parse(sessionStorage.getItem('links')) || [];
+
+            // Get the link container element
+            const linkContainer = document.getElementById('link-container');
+
+            if (linkContainer) {
+                // Create and append link elements for each stored link
+                links.forEach(link => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = link;
+                    a.textContent = link;
+                    a.target = '_blank'; // Open in a new tab
+                    li.appendChild(a);
+                    linkContainer.appendChild(li);
+                });
+            } else {
+                console.error('Link container not found');
+            }
+        });
+    </script>
+</body>
+
+</html>

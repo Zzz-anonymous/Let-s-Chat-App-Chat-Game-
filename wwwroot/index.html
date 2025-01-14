@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+    <title>Let's Chat</title>
+    <link href="image/favicon.png" rel="shortcut icon">
+    <link href="css/app.css" rel="stylesheet">
+    <style>
+        body {
+            color: #abddd7;
+            text-shadow: 3px -1px 11px rgba(238, 32, 157, 0.68);
+            background: url("image/91657.jpg");
+            background-size: cover;
+        }
+
+        button {
+            color: #fff;
+            background: #bd00ff;
+            
+            border-color: #bd00ff;
+            box-shadow: .25em .25em #b5e8ec;
+
+            &:hover {
+                color: #bd00ff;
+                background: #ffffff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Let's Chat</h1>
+    </header>
+
+    <main>
+        <form autocomplete="off" class="formIndex">
+            <label style="margin-top:10px ;">Name:</label>
+            <input type="text" id="name" placeholder="Enter Name" autofocus style="margin-top:10px ;">
+            <label>Profile Picture:</label>
+            <input type="file" id="profilePicture" accept="image/*">
+            <br>
+            <label for="file">
+                <img class="photo" id="profileImagePreview" src="image/profilePicture.png" alt="Profile Picture"
+                    width="100">
+            </label>
+            <div></div>
+            <button type="submit">Join Chat</button>
+        </form>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $('#profilePicture').on('change', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#profileImagePreview').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        $('form').submit(e => {
+            e.preventDefault();
+            const name = $('#name').val().trim() || 'Guest';
+            const fileInput = document.getElementById('profilePicture');
+            const file = fileInput.files[0];
+
+            const setDefaultProfilePicture = () => {
+                const defaultProfilePicture = 'image/profilePicture.png';
+                fetch(defaultProfilePicture)
+                    .then(response => response.blob())
+                    .then(blob => crop(blob, 100, 100, 'dataURL')) // Crop default profile picture
+                    .then(dataURL => {
+                        sessionStorage.setItem('name', name);
+                        sessionStorage.setItem('profilePicture', dataURL); // Base64-encoded image
+                        location = 'chat.html';
+                    });
+            };
+
+            if (file) {
+                crop(file, 100, 100, 'dataURL') // Crop user-uploaded profile picture
+                    .then(dataURL => {
+                        sessionStorage.setItem('name', name);
+                        sessionStorage.setItem('profilePicture', dataURL); // Base64-encoded image
+                        location = 'chat.html';
+                    });
+            } else {
+                setDefaultProfilePicture();
+            }
+        });
+    </script>
+</body>
+
+</html>

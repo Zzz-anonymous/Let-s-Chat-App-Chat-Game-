@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+    <title>Race Game</title>
+    <link href="image/favicon.png" rel="shortcut icon">
+    <link href="css/app.css" rel="stylesheet">
+    <style>
+        body {
+            background: url("image/91656.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        #status {
+            color: #e3e1e3;
+            text-shadow: 3px -1px 11px rgba(32, 125, 238, 0.68);
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        #info {
+            color: #e3e1e3;
+            text-shadow: 3px -1px 11px rgba(32, 125, 238, 0.68);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .start,
+        .finish {
+            padding: 10px;
+            width: 50px;
+            color: white;
+            text-align: center;
+        }
+
+        .icon img {
+            display: block;
+            width: 45px;
+            height: 45px;
+        }
+
+        .start {
+            background-color: red;
+        }
+
+        .finish {
+            background-color: green;
+        }
+
+        .lane {
+            flex: 1;
+            border: 1px solid #999;
+            position: relative;
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            position: absolute;
+
+            top: 50%;
+            translate: -50% -50%;
+            animation: swing 0.3s linear 0s infinite alternate;
+
+            margin-left: 0;
+            transition: margin-left 0.3s linear;
+        }
+
+        @keyframes swing {
+            from {
+                rotate: -5deg;
+            }
+
+            to {
+                rotate: +5deg;
+            }
+        }
+
+        .me {
+            border: 3px solid blue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Race Game</a></h1>
+    </header>
+
+    <main>
+        <!-- Background Music -->
+        <audio id="bg-music" loop>
+            <source src="sound/raceGameBg.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p><button id="leave">Leave</button></p>
+
+        <p id="status">Waiting another player...</p>
+
+        <div id="info">Player A : <b id="nameA"></b></div>
+        <button id="bombA" class="bomb valid-game-area">Bomb</button>
+        <div class="container">
+            <div class="start">START</div>
+            <div class="lane">
+                <div class="icon" id="A">
+                    <img id="APic" hidden />
+                </div>
+            </div>
+            <div class="finish">FINISH</div>
+        </div>
+
+        <br>
+
+        <div id="info">Player B : <b id="nameB"></b></div>
+        <button id="bombB" class="bomb valid-game-area">Bomb</button>
+        <div class="container">
+            <div class="start">START</div>
+            <div class="lane">
+                <!-- <div class="icon" id="B" hidden></div> -->
+                <div class="icon" id="B">
+                    <img id="BPic" hidden />
+                </div>
+            </div>
+            <div class="finish">FINISH</div>
+        </div>
+
+        <!-- sound effect -->
+        <audio id="raceSoundEffect">
+            <source src="sound/raceSoundEffect.MP3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="bombSoundEffect">
+            <source src="sound/bombSoundEffect.MP3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script>
+        // ========================================================================================
+        // General
+        // ========================================================================================
+
+        const name = sessionStorage.getItem('name') || 'Guest';
+        const profilePicture = sessionStorage.getItem('profilePicture') || 'image/profilePicture.png';
+
+        if (!name || !profilePicture) {
+            console.error('ERROR: Invalid profile picture or name');
+            location.href = 'chat.html';
+            throw new Error('Invalid profile picture or name');
+        }
+
+        const gameId = new URLSearchParams(window.location.search).get('gameId');
+
+        if (!gameId) {
+            console.error('ERROR: Invalid game ID');
+            //location.href = 'chat.html';
+            throw new Error('Invalid game ID');
+        }
+
+        let started = false;
+        let me = null; // A or B
+        const $status = $('#status');
+
+        // ========================================================================================
+        // Events
+        // ========================================================================================
+
+        $('#leave').click(e => {
+            location = 'chat.html';
+        });
+
+        // ========================================================================================
+        // Connect
+        // ========================================================================================
+
+        const param = $.param({ page: 'raceGame', profilePicture, name, gameId });
+
+        const con = new signalR.HubConnectionBuilder()
+            .withUrl('/hub?' + param)
+            .build();
+
+        con.onclose(err => {
+            alert('Disconnected');
+            location = '/';
+        });
+
+        con.on('Reject', () => {
+            location = 'chat.html';
+        });
+
+        con.on('Ready', (role, game) => {
+            console.log(game.playerA.name);
+            if (game.playerA) {
+                $('#nameA').text(game.playerA.name);
+                $('#APic').attr('src', game.playerA.profilePicture).show();
+
+            }
+
+            if (game.playerB) {
+                $('#nameB').text(game.playerB.name);
+                $('#BPic').attr('src', game.playerB.profilePicture).show();
+
+            }
+            if (me == null) {
+                me = role; // A or B
+                $('#' + letter).addClass('me');
+            }
+
+        });
+
+        con.on('RoleAssigned', (assignedRole) => {
+            console.log("Role assigned:", assignedRole);
+            me = assignedRole;
+            if (me === 'A') {
+                document.getElementById('bombB').style.display = 'none'; // Hide Player B's bomb button
+            } else if (me === 'B') {
+                document.getElementById('bombA').style.display = 'none'; // Hide Player A's bomb button
+            }
+        });
+
+        con.on('Left', letter => {
+            let id = setTimeout(() => location = 'chat.html', 3000);
+            while (--id) clearTimeout(id);
+
+            started = false;
+            $status.text(`Player ${letter} left. You win!`);
+        });
+
+        con.on('Start', () => {
+            setTimeout(() => $status.text('Ready... 3'), 1000);
+            setTimeout(() => $status.text('Ready... 2'), 2000);
+            setTimeout(() => $status.text('Ready... 1'), 3000);
+            setTimeout(() => {
+                started = true;
+                $status.text('Press SPACE to run!');
+            }, 4000);
+        });
+
+        con.on('Move', (letter, count) => {
+            console.log(`${letter} moved to ${count}%`);
+            $('#' + letter).css('margin-left', count + '%');
+        });
+
+
+        con.on('BombTriggered', (role, newCount) => {
+            console.log(`Bomb triggered by ${role}. Opponent's new count: ${newCount}`);
+            // Update the opponent's progress in the UI
+            let opponentRole = role === 'A' ? 'B' : 'A';
+            $('#' + opponentRole).css('margin-left', newCount + '%');
+
+        });
+
+
+        con.on('Win', letter => {
+            started = false;
+
+            if (me == letter) {
+                $status.text('You win!');
+            }
+            else {
+                $status.text('You lose!');
+            }
+
+            setTimeout(() => location = 'chat.html', 3000);
+        });
+
+        con.start().then(main);
+
+        function main() {
+            const bgMusic = document.getElementById("bg-music");
+            const raceSoundEffect = document.getElementById("raceSoundEffect");
+            const bombSoundEffect = document.getElementById("bombSoundEffect");
+
+            bgMusic.play();
+
+
+            $(document).keydown(e => {
+                if (started && e.code == 'Space' && !e.originalEvent.repeat) {
+                    con.invoke('Run', me, false);
+                    raceSoundEffect.play();
+                }
+            });
+
+
+            $(document).ready(function () {
+                // Cooldown time in milliseconds
+                const cooldownTime = 3000;
+
+                $('#bombA').click(function () {
+                    console.log("Player A Bomb Triggered");
+                    con.invoke('Run', 'A', true);  // Trigger bomb for Player A
+                    bombSoundEffect.play();
+
+                    // Disable the button and set a cooldown
+                    $(this).prop('disabled', true);
+                    setTimeout(() => {
+                        $(this).prop('disabled', false);
+                    }, cooldownTime);
+                });
+
+                $('#bombB').click(function () {
+                    console.log("Player B Bomb Triggered");
+                    con.invoke('Run', 'B', true);  // Trigger bomb for Player B
+                    bombSoundEffect.play();
+
+                    // Disable the button and set a cooldown
+                    $(this).prop('disabled', true);
+                    setTimeout(() => {
+                        $(this).prop('disabled', false);
+                    }, cooldownTime);
+                });
+            });
+        }
+
+    </script>
+</body>
+
+</html>
