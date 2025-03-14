@@ -11,7 +11,7 @@ Open the Visual Studio Code terminal and run the following command to start the 
 
 # Screen Design
 ## 1) Index Page
-The Index Page is the landing page of the chat app. The user can enter a nickname here or choose a profile picture before joining the chat. Otherwise, the chat app will provide a default nickname or profile picture if the user does not provide one.
+The Index Page is the landing page of the chat app. The user can enter a nickname here or choose a profile picture before joining the chat. Otherwise, the chat app will provide a default nickname or profile picture if the user does not provide one. <br>
 ![{FC98D4C7-F595-4D08-B168-A106FE3D6807}](https://github.com/user-attachments/assets/8c78f756-6513-4311-ad31-12df88c2c212)
 ![{797CBD06-E78C-423D-B21C-0270DE4E121D}](https://github.com/user-attachments/assets/4590702e-2fc9-4995-b8ea-74cfa3938f89)
 
